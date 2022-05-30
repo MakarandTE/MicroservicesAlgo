@@ -1,0 +1,22 @@
+package com.algo.seller.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.algo.seller.dto.Cart;
+import com.algo.seller.service.CartService;
+
+@RestController
+public class CartController {
+
+	@Autowired
+	private CartService service;
+	
+	public ResponseEntity<?> addCartItems(Cart cart){
+		Cart cart2=service.addToCart(cart);
+		
+		return new ResponseEntity<Cart>(cart,HttpStatus.ok);
+	}
+}

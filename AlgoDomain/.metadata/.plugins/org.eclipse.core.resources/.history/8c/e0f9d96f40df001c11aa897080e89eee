@@ -1,0 +1,5 @@
+package com.algo.customer.dao;
+
+public interface ProductCategoryDao {
+
+}

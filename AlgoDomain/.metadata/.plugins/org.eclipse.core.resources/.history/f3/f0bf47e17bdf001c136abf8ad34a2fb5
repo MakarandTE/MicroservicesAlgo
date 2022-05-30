@@ -1,0 +1,10 @@
+package com.algo.seller.dto;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Cart {
+
+	private int Id;
+	
+}

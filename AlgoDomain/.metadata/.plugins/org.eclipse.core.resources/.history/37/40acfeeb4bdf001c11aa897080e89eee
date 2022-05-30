@@ -1,0 +1,8 @@
+package com.algo.customer.service;
+
+import com.algo.customer.dto.ProductCategory;
+
+public interface ProductCategoryService {
+
+	public ProductCategory addCategory(ProductCategory productCategory);
+}

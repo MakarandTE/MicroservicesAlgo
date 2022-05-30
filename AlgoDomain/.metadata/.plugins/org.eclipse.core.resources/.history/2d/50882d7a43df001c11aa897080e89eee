@@ -1,0 +1,10 @@
+package com.algo.customer.dao;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.algo.customer.dto.ProductsTypes;
+
+public interface ProductTypeDao extends CrudRepository<ProductsTypes, Integer> {
+
+	public ProductsTypes findByProductTypeId(int id);
+}

@@ -1,0 +1,6 @@
+package com.algo.seller.vo;
+
+public class ResponseTemlateVO {
+
+	private ProductDetails details;
+}

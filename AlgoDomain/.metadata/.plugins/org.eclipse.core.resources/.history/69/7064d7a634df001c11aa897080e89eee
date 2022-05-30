@@ -1,0 +1,6 @@
+package com.algo.customer.dto;
+
+public class ProductDetails {
+
+	
+}

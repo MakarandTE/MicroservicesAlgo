@@ -1,0 +1,6 @@
+package com.algo.seller.dto;
+
+public class PurchedProduct {
+
+	
+}

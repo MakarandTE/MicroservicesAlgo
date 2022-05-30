@@ -1,0 +1,20 @@
+package com.algo.seller.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.algo.seller.dto.PurchasedProduct;
+import com.algo.seller.service.PurchasedProductService;
+
+@RestController
+public class PurchasedProductController {
+
+	@Autowired
+	private PurchasedProductService service;
+
+    public ResponseEntity<?> AddPurchasedProducts(PurchasedProduct product){
+    	PurchasedProduct product2=service.addPurchasedProduct(product);
+    }
+    
+}

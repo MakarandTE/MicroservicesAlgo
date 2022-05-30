@@ -1,0 +1,16 @@
+package com.algo.seller.vo;
+
+
+	
+
+public class ProductDetails {
+
+	private int productId;
+	
+	private String productName;
+	
+	private int productPriceRange;
+	
+	private String description;
+	
+}

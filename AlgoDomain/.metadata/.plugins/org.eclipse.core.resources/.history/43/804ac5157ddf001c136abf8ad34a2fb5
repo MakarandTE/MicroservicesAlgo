@@ -1,0 +1,25 @@
+package com.algo.seller.vo;
+
+import com.algo.seller.dto.Cart;
+import com.algo.seller.dto.Customer;
+import com.algo.seller.dto.PurchedProduct;
+
+public class ResponseTemlateVO {
+
+	private ProductDetails details;
+	
+	private Cart cart;
+	
+	private Customer customer;
+	
+	private PurchedProduct product;
+	
+	public ProductDetails getDetails() {
+		return details;
+	}
+
+	public void setDetails(ProductDetails details) {
+		this.details = details;
+	}
+
+}

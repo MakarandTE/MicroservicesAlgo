@@ -1,0 +1,7 @@
+package com.algo.customer.dto;
+
+public class ProductsTypes {
+
+	private int id;
+	private 
+}

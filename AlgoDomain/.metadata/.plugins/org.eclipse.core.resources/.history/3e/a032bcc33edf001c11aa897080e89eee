@@ -1,0 +1,28 @@
+package com.algo.customer.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.algo.customer.dto.ProductDetails;
+import com.algo.customer.service.ProductService;
+
+@RestController
+public class ProductController {
+
+	@Autowired
+	private ProductService service;
+	
+	public ResponseEntity<?> addProduct(@RequestBody ProductDetails productDetails ){
+		ProductDetails productDetails2=service.addProduct(productDetails);
+		
+		return new ResponseEntity<ProductDetails>(productDetails,HttpStatus.OK);
+	}
+	
+	public ResponseEntity<?> deleteProduct(int id){
+      service.deleteProduct(id);
+		return new ResponseEntity<String>("its deleted",HttpStatus.OK);
+	}
+}

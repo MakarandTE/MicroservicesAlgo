@@ -1,0 +1,8 @@
+package com.algo.seller.service;
+
+import com.algo.seller.dto.Cart;
+
+public interface CartService {
+
+	public Cart addToCart(Cart);
+}

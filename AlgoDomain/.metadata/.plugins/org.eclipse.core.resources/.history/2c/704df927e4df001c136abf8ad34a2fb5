@@ -1,0 +1,10 @@
+package com.algo.seller.dao;
+
+import org.springframework.data.repository.CrudRepository;
+
+public interface PurchasedProductDao extends CrudRepository<PurchasedProductDao, Integer> {
+
+	public PurchasedProductDao findByPurchasedProductId(int id);
+	
+	
+}

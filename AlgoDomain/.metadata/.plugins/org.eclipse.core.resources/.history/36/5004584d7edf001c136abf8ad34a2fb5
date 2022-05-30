@@ -1,0 +1,16 @@
+package com.algo.customer.dao;
+
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.data.repository.CrudRepository;
+
+import com.algo.customer.dto.ProductDetails;
+
+//@EnableJpaRepositories
+public interface ProductDao extends CrudRepository<ProductDetails, Integer>{
+
+	public ProductDetails findByProductId(int id);
+	
+//	public ProductDetails findByProductCategory(int id);
+	
+//	public ProductDetails findByProductType(int id);
+}

@@ -1,0 +1,19 @@
+package com.algo.seller.vo;
+
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+
+	
+
+public class ProductDetails {
+
+	private int productId;
+	
+	private String productName;
+	
+	private int productPriceRange;
+	
+	private String description;
+	
+	private int 
+}

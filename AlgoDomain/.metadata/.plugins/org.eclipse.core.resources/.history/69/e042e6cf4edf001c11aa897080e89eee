@@ -1,0 +1,19 @@
+package com.algo.customer.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.algo.customer.dao.ProductTypeDao;
+import com.algo.customer.dto.ProductsTypes;
+@Service
+public class ProductTypeServiceImpl implements ProductTypeService{
+
+	@Autowired
+	private  ProductTypeDao typeDao;
+	
+	@Override
+	public ProductsTypes addProductTypes(ProductsTypes productsTypes) {
+		return typeDao.save(productsTypes);
+	}
+
+}

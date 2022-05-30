@@ -1,0 +1,32 @@
+package com.algo.customer.dto;
+
+import java.util.List;
+
+public class ProductsTypes {
+
+	private int productId;
+	private String productTypeName;
+	private List<ProductCategory> catagoryId;
+	
+	
+	public int getProductId() {
+		return productId;
+	}
+	public void setProductId(int productId) {
+		this.productId = productId;
+	}
+	public String getProductTypeName() {
+		return productTypeName;
+	}
+	public void setProductTypeName(String productTypeName) {
+		this.productTypeName = productTypeName;
+	}
+	public List<ProductCategory> getCatagoryId() {
+		return catagoryId;
+	}
+	public void setCatagoryId(List<ProductCategory> catagoryId) {
+		this.catagoryId = catagoryId;
+	}
+	
+	
+}

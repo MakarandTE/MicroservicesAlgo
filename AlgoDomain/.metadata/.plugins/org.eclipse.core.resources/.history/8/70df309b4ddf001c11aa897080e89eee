@@ -1,0 +1,8 @@
+package com.algo.customer.service;
+
+import com.algo.customer.dto.ProductsTypes;
+
+public interface ProductTypeService {
+
+	public ProductsTypes addProductTypes(ProductsTypes productsTypes);
+}

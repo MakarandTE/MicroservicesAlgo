@@ -1,0 +1,9 @@
+package com.algo.seller.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class CustometServiceImp implements CustomerService{
+
+	
+}

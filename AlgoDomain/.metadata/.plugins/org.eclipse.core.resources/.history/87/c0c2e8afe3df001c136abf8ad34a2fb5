@@ -1,0 +1,5 @@
+package com.algo.seller.service;
+
+public class PurchasedProductService {
+
+}

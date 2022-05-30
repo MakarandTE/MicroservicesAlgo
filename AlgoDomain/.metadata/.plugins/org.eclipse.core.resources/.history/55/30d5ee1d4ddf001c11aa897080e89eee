@@ -1,0 +1,20 @@
+package com.algo.customer.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.algo.customer.dao.ProductCategoryDao;
+import com.algo.customer.dto.ProductCategory;
+@Service
+public class ProductCategoryServiceImpl implements ProductCategoryService {
+
+	@Autowired
+	private ProductCategoryDao categoryDao;
+	
+	@Override
+	public ProductCategory addCategory(ProductCategory productCategory) {
+
+		return categoryDao.save(productCategory);
+	}
+
+}

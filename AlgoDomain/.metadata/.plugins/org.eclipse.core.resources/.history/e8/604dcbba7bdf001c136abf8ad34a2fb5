@@ -1,0 +1,5 @@
+package com.algo.seller.dto;
+
+public class Cart {
+
+}
